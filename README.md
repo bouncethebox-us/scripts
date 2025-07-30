@@ -21,7 +21,7 @@ Creates an Application Registration in Microsoft Entra ID (Azure AD).
 ________________________________________
 ### Part01_CreateAppRegistration.ps1
 This PowerShell script automates the creation of an Azure AD (Entra ID) Application Registration for scripts to assess oversharing, broad-sharing, lifecycle, etc. 
-#### Purpose: Environment Prep
+#### ✅Purpose: Environment Prep
 Creates an App Registration in Entra ID (Azure AD) with:
 - A self-signed certificate
 - A client secret
@@ -40,7 +40,7 @@ After creation, you must grant admin consent for the app to use the permissions.
 ________________________________________
 ### Part_02_Enumwebroleassignments.ps1
 This script lists all permissions in SharePoint Online, OneDrive, Teams, and Microsoft Groups. The output can be sorted to review 'Everyone', 'Everyone except external users', and 'Anyone' claims while aggregating permissions on all sites for document libraries, folders, files, and lists.  
-#### Purpose: Inventory all security principes
+#### ✅Purpose: Inventory all security principes
 Create inventory of security principles in SharePoint Online, OneDrive for Business, Microsoft Teams and other ancillary M365 and O365 services
 
 📋 Main Objectives
