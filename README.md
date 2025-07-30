@@ -6,7 +6,7 @@ NOTE: These scripts do not execute properly using Windows Power Shell ISE and re
 Unless otherwise noted, all scripts need to be run as ‘Administrator’ (local admin) from a PowerShell Core or PowerShell Desktop.
 
 ## Order of Operations
-Environment Prep  
+### Environment Prep  
 Part00 -> 
 
 # Application Registration
