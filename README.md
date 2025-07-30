@@ -55,8 +55,8 @@ Enumerate all SharePoint sites (excluding OneDrive).
 For each role assignment:
 - If the principal is a user:
  - Records explicit permissions.
-- If it's a security group:
- - Records the group and notes that it's a security group.
+If it's a security group:
+Records the group and notes that it's a security group.
 - If it's a SharePoint group:
  - Enumerates all members of the group and records their permissions.
 - If the principal type is unrecognized:
