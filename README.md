@@ -34,6 +34,7 @@ Output displayed on screen:
 - Tenant ID
 - Certificate thumbprint
 - Secret value
+  
 **NOTE:** Prompts for Admin Consent
 After creation, you must grant admin consent for the app to use the permissions.
 ________________________________________
