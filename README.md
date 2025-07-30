@@ -39,9 +39,35 @@ Output displayed on screen:
 After creation, you must grant admin consent for the app to use the permissions.
 ________________________________________
 ### Part_02_Enumwebroleassignments.ps1
-This script lists all permissions in SharePoint Online, OneDrive, Teams, and Microsoft Groups. The output can be sorted to review 'Everyone', 'Everyone except external users', and 'Anyone' claims while aggregating permissions on all sites for document libraries, folders, files, and lists.  This output can then be grouped down to Anyone, Everyone, EveryoneExceptExternalUsers, PeopleInMyOrg, etc.
-#### Purpose: Create inventory of security principlesin SharePoint Online, OneDrive for Business, Microsoft Teams and other ancillary M365 and O365 services
+This script lists all permissions in SharePoint Online, OneDrive, Teams, and Microsoft Groups. The output can be sorted to review 'Everyone', 'Everyone except external users', and 'Anyone' claims while aggregating permissions on all sites for document libraries, folders, files, and lists.  
+#### Purpose: Inventory all security principes
+Create inventory of security principles in SharePoint Online, OneDrive for Business, Microsoft Teams and other ancillary M365 and O365 services
 
+📋 Main Objectives
+1.	Enumerate all SharePoint sites (excluding OneDrive).
+2.	For each site:
+•	Connect and retrieve all subsites (webs), including the root.
+•	For each web:
+•	Retrieve role assignments (permissions).
+•	Identify whether the principal is a user, security group, or SharePoint group.
+•	Collect detailed permission data.
+🔍 Permission Analysis Performed
+For each role assignment:
+•	If the principal is a user:
+•	Records explicit permissions.
+•	If it's a security group:
+•	Records the group and notes that it's a security group.
+•	If it's a SharePoint group:
+•	Enumerates all members of the group and records their permissions.
+•	If the principal type is unrecognized:
+•	Logs an error entry.
+Each entry includes:
+•	Site and web URLs
+•	User or group login name and title
+•	Role name(s)
+•	Principal type
+•	SharePoint group info (if applicable)
+•	Notes about how the permission was assigned
 
 
 
