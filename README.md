@@ -43,7 +43,7 @@ This script lists all permissions in SharePoint Online, OneDrive, Teams, and Mic
 #### 🧾Purpose: Inventory all security principes
 Create inventory of security principles in SharePoint Online, OneDrive for Business, Microsoft Teams and other ancillary M365 and O365 services
 
-✅Main Objectives
+#### ✅Main Objectives
 Enumerate all SharePoint sites (excluding OneDrive).
 - For each site:
  - Connect and retrieve all subsites (webs), including the root.
@@ -51,7 +51,7 @@ Enumerate all SharePoint sites (excluding OneDrive).
  - Retrieve role assignments (permissions).
  - Identify whether the principal is a user, security group, or SharePoint group.
  - Collect detailed permission data.
-🔍 Permission Analysis Performed
+#### 🔍 Permission Analysis Performed
 For each role assignment:
 - If the principal is a user:
  - Records explicit permissions.
