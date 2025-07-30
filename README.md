@@ -8,7 +8,7 @@ Unless otherwise noted, all scripts need to be run as ‘Administrator’ (local
 ## Order of Operations
 ### Environment Prep: Part00_Env_Prep_PnP_InteractiveLogin.ps1
 This PowerShell script is designed to automate the creation of an Azure Entra ID (formerly Azure AD) Application Registration for use with interactive login scenarios—specifically for scripts that require enumerating web role assignments and similar tasks.
-####✅ Purpose
+#### Purpose
 •	Creates an Application Registration in Microsoft Entra ID (Azure AD).
 •	Intended for use with interactive login scenarios.
 •	Sets up the app with:
