@@ -52,9 +52,9 @@ Enumerate all SharePoint sites (excluding OneDrive).
  - Identify whether the principal is a user, security group, or SharePoint group.
  - Collect detailed permission data.
 #### 🔍 Permission Analysis Performed
-For each role assignment:
-- If the principal is a user:
- - Records explicit permissions.
+- For each role assignment:
+  - If the principal is a user:
+    - Records explicit permissions.
 If it's a security group:
 Records the group and notes that it's a security group.
 - If it's a SharePoint group:
