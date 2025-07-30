@@ -7,10 +7,10 @@ Unless otherwise noted, all scripts need to be run as ‘Administrator’ (local
 
 ## Order of Operations
 Execute these scripts in the order they are numbered and appear below.
-
+________________________________________
 ### **Part00_Env_Prep_PnP_InteractiveLogin.ps1**
 This PowerShell script is designed to automate the creation of an Azure Entra ID (formerly Azure AD) Application Registration for use with interactive login scenarios—specifically for scripts that require enumerating web role assignments and similar tasks.
-#### Requirements
+#### 📁 Requirements
 ##### ✅ PowerShell Version: 5.x
 ##### ✅ PowerShell Modules: Microsoft.Online.SharePoint.PowerShell
 ##### ✅ Least Privilege Admin Roles: SharePoint Admin, Teams Admin, Groups Admin
