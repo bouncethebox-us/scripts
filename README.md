@@ -20,7 +20,7 @@ This PowerShell script is designed to automate the creation of an Azure Entra ID
 **Note:** Requires Global Administrator privileges to grant Admin consent.
 ________________________________________
 ### Part01_CreateAppRegistration.ps1
-This PowerShell script automates the creation of an Azure AD (Entra ID) Application Registration for use in Microsoft 365 Copilot engagements or other Graph API-based integrations. 
+This PowerShell script automates the creation of an Azure AD (Entra ID) Application Registration for scripts to assess oversharing, broad-sharing, lifecycle, etc. 
 #### Purpose: Create enterprise application for delegation/application privileges
 - Creates an Application Registration in Microsoft Entra ID (Azure AD).
 Creates an App Registration in Entra ID (Azure AD) with:
