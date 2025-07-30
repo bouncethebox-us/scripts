@@ -46,27 +46,27 @@ Create inventory of security principles in SharePoint Online, OneDrive for Busin
 - Enumerate all SharePoint sites (excluding OneDrive).
 - For each site:
  - Connect and retrieve all subsites (webs), including the root.
- - For each web:
+- For each web:
  - Retrieve role assignments (permissions).
  - Identify whether the principal is a user, security group, or SharePoint group.
  - Collect detailed permission data.
 🔍 Permission Analysis Performed
 For each role assignment:
-•	If the principal is a user:
-•	Records explicit permissions.
-•	If it's a security group:
-•	Records the group and notes that it's a security group.
-•	If it's a SharePoint group:
-•	Enumerates all members of the group and records their permissions.
-•	If the principal type is unrecognized:
-•	Logs an error entry.
-Each entry includes:
-•	Site and web URLs
-•	User or group login name and title
-•	Role name(s)
-•	Principal type
-•	SharePoint group info (if applicable)
-•	Notes about how the permission was assigned
+- If the principal is a user:
+ - Records explicit permissions.
+- If it's a security group:
+ - Records the group and notes that it's a security group.
+- If it's a SharePoint group:
+ - Enumerates all members of the group and records their permissions.
+- If the principal type is unrecognized:
+ - Logs an error entry.
+- Each entry includes:
+ - Site and web URLs
+ - User or group login name and title
+ - Role name(s)
+ - Principal type
+ - SharePoint group info (if applicable)
+ - Notes about how the permission was assigned
 
 
 
