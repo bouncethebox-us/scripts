@@ -1,7 +1,9 @@
 # Oversharing and Broad-sharing discovery
 Discovery scripts useful in assessing oversharing, broadsharing, lifecycle before deploying Microsoft 365 Copilot
+NOTE: These scripts do not execute properly using Windows Power Shell ISE and require PowerShell Core or PowerShell Desktop to run.  
+Unless otherwise noted, all scripts need to be run as ‘Administrator’ (local admin) from a PowerShell Core or PowerShell Desktop.
 
-Order of Operations
+1. Order of Operations
 # Environment Prep  
 Part00 -> 
 
