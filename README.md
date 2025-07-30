@@ -10,6 +10,10 @@ Execute these scripts in the order they are numbered and appear below.
 
 ### **Part00_Env_Prep_PnP_InteractiveLogin.ps1**
 This PowerShell script is designed to automate the creation of an Azure Entra ID (formerly Azure AD) Application Registration for use with interactive login scenarios—specifically for scripts that require enumerating web role assignments and similar tasks.
+#### Requirements
+PowerShell Version: 5.x
+PowerShell Modules: Microsoft.Online.SharePoint.PowerShell
+Least Privilege Admin Roles: SharePoint Admin, Teams Admin, Groups Admin
 #### 🧾Purpose: Environment Prep
 Creates an Application Registration in Microsoft Entra ID (Azure AD).
 - Intended for use with interactive login scenarios.
@@ -69,11 +73,29 @@ Enumerate all SharePoint sites (excluding OneDrive).
     - SharePoint group info (if applicable)
     - Notes about how the permission was assigned
 
+________________________________________
+### 3_Get_SPO_Sites.ps1
+This script lists all permissions in SharePoint Online, OneDrive, Teams, and Microsoft Groups. The output can be sorted to review 'Everyone', 'Everyone except external users', and 'Anyone' claims while aggregating permissions on all sites for document libraries, folders, files, and lists.  
+#### 🧾Purpose: Inventory assets
+This PowerShell script is designed to enumerate all SharePoint Online sites in a Microsoft 365 tenant, including:
+•	Group-connected sites
+•	Non-group-connected sites
+•	Team-enabled sites
+•	OneDrive for Business sites
+•	It collects detailed metadata about each site and exports the results to a CSV file.
+📦 Data Collection
+For each site:
+•	If it's a OneDrive site (identified by URL patterns and template):
+•	Collects basic metadata and assigns default values for group-related fields.
+•	If it's a regular site:
+•	Re-fetches the site individually using Get-SPOSite -Identity to get full property details (some are not returned in bulk queries).
+•	Collects metadata including:
+•	URL, owner, title
+•	Storage usage
+•	Locale and lock state
+•	Template and web count
+•	Group and Teams connection info
+•	Last content modified date
 
-
-# Application Registration
-Part01 -> Part02 -> 
-
-3_Get_SPO_Sites -> 4_OD4B_Discovery -> 5_SPO_Discovery 6_Tenant_Discovery  7_Info_Barriers_Discovery
 
 
