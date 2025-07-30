@@ -42,8 +42,9 @@ ________________________________________
 This script lists all permissions in SharePoint Online, OneDrive, Teams, and Microsoft Groups. The output can be sorted to review 'Everyone', 'Everyone except external users', and 'Anyone' claims while aggregating permissions on all sites for document libraries, folders, files, and lists.  
 #### 🧾Purpose: Inventory all security principes
 Create inventory of security principles in SharePoint Online, OneDrive for Business, Microsoft Teams and other ancillary M365 and O365 services
+
 ✅Main Objectives
-- Enumerate all SharePoint sites (excluding OneDrive).
+Enumerate all SharePoint sites (excluding OneDrive).
 - For each site:
  - Connect and retrieve all subsites (webs), including the root.
 - For each web:
