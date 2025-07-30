@@ -19,14 +19,14 @@ This PowerShell script is designed to automate the creation of an Azure Entra ID
  - Microsoft Graph API permissions
 **Note:** Requires Global Administrator privileges to grant Admin consent.
 ________________________________________
-### Create Enterprise Application: Part01_CreateAppRegistration.ps1
+### Part01_CreateAppRegistration.ps1
 This PowerShell script automates the creation of an Azure AD (Entra ID) Application Registration for use in Microsoft 365 Copilot engagements or other Graph API-based integrations. 
-#### Purpose
+#### Purpose: Create enterprise application for delegation/application privileges
 - Creates an Application Registration in Microsoft Entra ID (Azure AD).
 Creates an App Registration in Entra ID (Azure AD) with:
-•	A self-signed certificate
-•	A client secret
-•	Microsoft Graph and SharePoint API permissions
+- A self-signed certificate
+- A client secret
+- Microsoft Graph and SharePoint API permissions
 #### Output
 Copy and paste the information from PowerShell into Notepad and save it securely. Once you close PowerShell, the 'client secret' and 'cert thumbprint' will disappear and cannot be retrieved again. If lost, rerun the script to obtain new values.
 1.	Output displayed on screen:
