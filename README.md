@@ -1,5 +1,5 @@
 # scripts
-Discovery Scripts
+Discovery scripts useful in assessing oversharing, broadsharing, lifecycle before deploying Microsoft 365 Copilot
 
 Order of Operations
 # Environment Prep  
