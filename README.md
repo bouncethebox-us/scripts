@@ -14,7 +14,7 @@ This PowerShell script is designed to automate the creation of an Azure Entra ID
 ##### ✅ PowerShell Version: 5.x
 ##### ✅ PowerShell Modules: Microsoft.Online.SharePoint.PowerShell
 ##### ✅ Least Privilege Admin Roles: SharePoint Admin, Teams Admin, Groups Admin
-##### 🧾Purpose: Environment Prep
+#### 🧾Purpose: Environment Prep
 Creates an Application Registration in Microsoft Entra ID (Azure AD).
 - Intended for use with interactive login scenarios.
 - Sets up the app with:
